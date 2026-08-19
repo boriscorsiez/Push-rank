@@ -145,7 +145,23 @@ body{background:radial-gradient(900px 500px at 50% -80px,rgba(157,255,38,.10),tr
 .dashboard-grid{display:grid;grid-template-columns:1.2fr .95fr;gap:12px}.mission-card{grid-row:span 2;padding:18px}.mission-title{display:flex;align-items:center;gap:8px;color:var(--accent);font-size:10px;letter-spacing:1.3px;font-weight:950}.target-icon{font-size:20px}.mission-main{display:flex;align-items:center;justify-content:center;gap:20px;margin:16px 0}.goal-ring{width:190px;height:190px;border-radius:50%;display:grid;place-items:center;background:conic-gradient(var(--accent) 0deg, #9be52a 220deg,#243028 220deg 360deg);box-shadow:0 0 0 1px rgba(200,255,50,.08),0 0 40px rgba(200,255,50,.08);position:relative}.goal-ring:before{content:"";position:absolute;inset:9px;border-radius:50%;background:#071012;border:1px solid rgba(255,255,255,.08)}.goal-ring>div{position:relative;text-align:center}.goal-ring strong{display:block;font-size:54px;line-height:.9;letter-spacing:-4px}.goal-ring span{display:block;margin-top:9px;font-size:10px;color:#9aa3a9;letter-spacing:1px;line-height:1.3}.goal-side b{display:block;font-size:31px;color:var(--accent);letter-spacing:-1px}.goal-side span{font-size:9px;color:#8c969d;line-height:1.35}.mission-line{text-align:center;font-size:11px;color:#b6bec2;margin-bottom:12px;font-style:italic}.neon-cta{height:53px;margin-top:0;border:1px solid rgba(200,255,50,.45);box-shadow:0 0 25px rgba(200,255,50,.12),inset 0 0 20px rgba(255,255,255,.04)}.play{font-size:11px}
 .metrics-panel{display:grid;grid-template-columns:1fr 1fr;gap:10px}.metric-card{padding:13px;min-height:100px}.metric-icon{display:block;color:var(--accent);font-size:16px;margin-bottom:8px}.metric-icon.gold{color:var(--gold)}.metric-card small{display:block;font-size:7px;color:#7f8a91;letter-spacing:1.1px;font-weight:900}.metric-card b{display:block;font-size:22px;margin-top:6px;letter-spacing:-1px}.metric-card b em{font-style:normal;font-size:8px;color:#778188;letter-spacing:0}
 .current-rank{padding:15px;overflow:hidden}.rank-card-head{display:flex;justify-content:space-between;font-size:8px;letter-spacing:1.4px;color:#8c969c;font-weight:900}.dots{letter-spacing:3px}.rank-showcase{display:flex;align-items:center;gap:5px;min-height:155px}.rank-showcase img{width:57%;max-height:165px;object-fit:contain;mix-blend-mode:screen;filter:drop-shadow(0 0 18px rgba(90,160,255,.22))}.rank-showcase-copy{flex:1}.rank-showcase-copy small{font-size:8px;color:#55b2ff;font-weight:900;letter-spacing:1px}.rank-showcase-copy strong{display:block;font-size:21px;font-style:italic;letter-spacing:-1px;margin:6px 0}.rank-showcase-copy p{font-size:9px;color:#9ca6ad;line-height:1.4}.rank-btn{margin-top:0;padding:12px;font-size:9px;letter-spacing:.7px;display:flex;justify-content:space-between}
-.collection-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px}.collection-grid>div{padding:15px;border-radius:22px;background:linear-gradient(145deg,rgba(10,16,18,.98),rgba(5,10,12,.98));border:1px solid rgba(255,255,255,.085)}.compact{margin:0 0 10px}.rank-mini-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:5px}.rank-mini{padding:4px 2px;text-align:center;border-radius:10px}.rank-mini img{width:100%;height:64px;object-fit:contain;mix-blend-mode:screen;filter:saturate(.7);opacity:.42}.rank-mini.unlocked img{opacity:1;filter:saturate(1.1) drop-shadow(0 0 7px rgba(200,255,50,.15))}.rank-mini.current{background:rgba(200,255,50,.055);outline:1px solid rgba(200,255,50,.2)}.rank-mini b{display:block;font-size:7px;color:#777f86}.rank-mini.current b{color:var(--accent)}
+.collection-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px}.collection-grid>div{padding:15px;border-radius:22px;background:linear-gradient(145deg,rgba(10,16,18,.98),rgba(5,10,12,.98));border:1px solid rgba(255,255,255,.085)}.compact{margin:0 0 10px}.all-ranks-card{margin-top:12px;padding:15px!important;background:linear-gradient(145deg,rgba(255,255,255,.035),rgba(255,255,255,.012))!important}
+.all-ranks-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}
+.all-rank-card{position:relative;display:flex;align-items:center;gap:10px;min-height:72px;padding:8px 10px;border:1px solid rgba(255,255,255,.065);border-radius:16px;background:linear-gradient(145deg,#15181d,#0d0f13);overflow:hidden;transition:.25s}
+.all-rank-card.locked{opacity:.55;filter:saturate(.45)}
+.all-rank-card.unlocked{border-color:rgba(200,255,66,.10)}
+.all-rank-card.current{border-color:rgba(200,255,66,.4);background:linear-gradient(145deg,rgba(200,255,66,.10),#10140e);box-shadow:0 8px 25px rgba(200,255,66,.07)}
+.all-rank-card .rank-emblem{width:54px;height:54px;flex-basis:54px}
+.all-rank-card .rank-emblem svg{width:54px;height:54px}
+.all-rank-copy{min-width:0;flex:1}
+.all-rank-copy strong{display:block;font-size:11px;font-weight:950;letter-spacing:.3px}
+.all-rank-copy small{display:block;margin-top:3px;font-size:8px;color:#747b85}
+.all-rank-copy .xp-needed{display:block;margin-top:5px;font-size:8px;color:#9ca3ae;font-weight:800}
+.all-rank-card.current .all-rank-copy strong,.all-rank-card.current .all-rank-copy .xp-needed{color:var(--accent)}
+.all-rank-state{position:absolute;right:7px;top:7px;font-size:7px;font-weight:950;letter-spacing:.6px;color:#606671}
+.all-rank-card.current .all-rank-state{color:var(--accent)}
+@media(max-width:380px){.all-ranks-grid{grid-template-columns:1fr}.all-rank-card{min-height:68px}}
+.rank-mini-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:5px}.rank-mini{padding:4px 2px;text-align:center;border-radius:10px}.rank-mini img{width:100%;height:64px;object-fit:contain;mix-blend-mode:screen;filter:saturate(.7);opacity:.42}.rank-mini.unlocked img{opacity:1;filter:saturate(1.1) drop-shadow(0 0 7px rgba(200,255,50,.15))}.rank-mini.current{background:rgba(200,255,50,.055);outline:1px solid rgba(200,255,50,.2)}.rank-mini b{display:block;font-size:7px;color:#777f86}.rank-mini.current b{color:var(--accent)}
 .badge-mini-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}.badge-mini{aspect-ratio:1;text-align:center;display:grid;place-items:center;border-radius:12px;background:#0c1214;border:1px solid rgba(255,255,255,.06);position:relative}.badge-mini span{width:38px;height:38px;border-radius:12px;display:grid;place-items:center;font-size:15px;color:#555d64;border:1px solid #30383c;background:radial-gradient(circle,#242d2f,#0c1113)}.badge-mini.unlocked span{color:#0b1008;background:radial-gradient(circle,#eaff9b,#8dcc23 65%,#3b5d12);box-shadow:0 0 16px rgba(200,255,50,.16)}.badge-mini small{position:absolute;bottom:3px;font-size:5px;color:#737d83;font-weight:800}.badge-mini.unlocked small{color:#b7cf7b}
 .lower-grid{display:grid;grid-template-columns:1fr 1.3fr 1fr;gap:10px;margin-top:12px}.challenge-card{display:flex;align-items:center;gap:10px;padding:13px}.challenge-icon{font-size:25px}.challenge-card small,.weekly-card small{display:block;color:var(--accent);font-size:7px;letter-spacing:1px;font-weight:900}.challenge-card b{display:block;font-size:8px;line-height:1.35;margin-top:5px}.motivation-card{display:flex;align-items:center;justify-content:center;text-align:center;padding:10px;font-size:11px;line-height:1.35;font-style:italic;font-weight:900}.motivation-card span{color:var(--accent);text-shadow:0 0 15px rgba(200,255,50,.18)}.weekly-card{padding:13px}.weekly-card>b{display:block;font-size:15px;margin:5px 0 7px}.week-track{height:6px;background:#182124;border-radius:99px;overflow:hidden}.week-track span{display:block;width:0;height:100%;background:var(--accent);border-radius:99px;box-shadow:0 0 10px rgba(200,255,50,.3)}
 .premium-nav{grid-template-columns:1fr 1fr 1fr 1fr 1fr;height:68px;border-radius:24px}.premium-nav button{font-size:7px;gap:3px}.premium-nav .nav-plus{position:relative;background:transparent}.nav-plus span{width:48px;height:48px;border-radius:16px;background:linear-gradient(145deg,#d9ff70,#8dd31c);color:#091007;font-size:31px;line-height:45px;box-shadow:0 0 28px rgba(200,255,50,.25),inset 0 1px #f4ffc6}.nav-plus:before{content:"";position:absolute;inset:4px;border:1px solid rgba(200,255,50,.25);border-radius:19px}.premium-nav button.active{color:var(--accent);background:rgba(200,255,50,.045)}
@@ -216,6 +232,14 @@ body{background:radial-gradient(900px 500px at 50% -80px,rgba(157,255,38,.10),tr
       </div>
       <button class="secondary rank-btn" onclick="show('stats')">VOIR TOUS LES RANGS <span>→</span></button>
     </div>
+  </section>
+
+  <section class="all-ranks-card card">
+    <div class="section-head compact">
+      <span class="section-title">TOUS LES RANGS</span>
+      <span class="section-link">8 EMBLÈMES</span>
+    </div>
+    <div class="all-ranks-grid" id="allRanksHome"></div>
   </section>
 
   <section class="collection-grid">
@@ -378,13 +402,25 @@ function render(){
   $('missionDone').textContent=d.today;$('missionGoal').textContent=goal;$('missionPercent').textContent=mp+'%';
   $('missionFill').style.width=mp+'%';
   $('missionMessage').textContent=d.today>=goal?'OBJECTIF TERMINÉ · demain on recommence.':(d.today===0?'Ta première série lance la journée.':(goal-d.today)+' pompes restantes.');
-  renderChart();renderRanks();renderBadges();renderHomeCollections();
+  renderChart();renderRanks();renderAllRanksHome();renderBadges();renderHomeCollections();
 }
 function badgeUnlocked(b){
   if(b[5]==='total')return d.total>=b[4];
   if(b[5]==='streak')return d.streak>=b[4];
   if(b[5]==='xp')return d.xp>=b[4];
   return false;
+}
+function renderAllRanksHome(){
+  const box=$('allRanksHome');if(!box)return;
+  const current=rank()[0];
+  box.innerHTML=R.map((x,i)=>{
+    const unlocked=d.xp>=x[1],isCurrent=x[0]===current;
+    const xp=x[1]===0?'DÉPART':x[1].toLocaleString('fr-FR')+' XP';
+    return '<div class="all-rank-card '+(unlocked?'unlocked ':'locked ')+(isCurrent?'current':'')+'">'+
+      rankEmblem(i)+
+      '<div class="all-rank-copy"><strong>'+x[0]+'</strong><small>RANK '+String(i+1).padStart(2,'0')+'</small><span class="xp-needed">'+xp+'</span></div>'+
+      '<span class="all-rank-state">'+(isCurrent?'ACTUEL':unlocked?'✓':'🔒')+'</span></div>';
+  }).join('');
 }
 function renderHomeCollections(){
   const rb=$('homeRanks');
